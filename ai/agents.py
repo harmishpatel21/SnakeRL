@@ -93,3 +93,4 @@ class DQNAgent:
         
     def load(self, filename):
         self.model.load_state_dict(torch.load(filename))
+        self.model.eval() # Set the network to evaluation mode
